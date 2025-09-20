@@ -1,16 +1,12 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-// import { api } from '../api'
 
 export default function Home() {
   const navigate = useNavigate()
   const [me, setMe] = useState(null)
   const [text, setText] = useState('')
 
-
-
   function logout() {
-    
     navigate('/signin')
   }
 
